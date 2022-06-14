@@ -76,6 +76,10 @@ main {
   margin: auto;
 }
 
+.mobile {
+  height: 85vh;
+}
+
 .container {
   margin: 25px auto;
   width: 300px;
@@ -84,7 +88,7 @@ main {
 .item-container {
   background-color: rgba(255, 255, 255, 0.6);
   margin: 25px auto;
-  padding: 20px 40px;
+  padding: 30px 40px;
   border-radius: 20px;
 }
 
@@ -144,7 +148,7 @@ main {
     margin-right: 30px;
     grid-area: today;
   }
-
+ 
   .today__date {
     font-size: 28px;
     font-weight: 500;
@@ -153,12 +157,6 @@ main {
   .today__emoji {
     height: 60px;
     width: 60px;
-  }
-
-  .calendar {
-    width: 300px;
-    text-align: center;
-    grid-area: cal;
   }
 
   .history {
@@ -180,7 +178,7 @@ main {
   }
 
   .history__day {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .history__date {
@@ -200,11 +198,6 @@ main {
 
 .entry__greet {
   display: none;
-  margin-left: 30px;
-}
-
-.calendar {
-  display: none;
 }
 
 .container__p {
@@ -216,7 +209,6 @@ main {
 }
 
 .mood {
-  grid-area: mood;
   width: 300px;
 }
 
@@ -312,7 +304,7 @@ label.label input[type="file"] {
   font-size: 18px;
   padding: 12px 80px;
   display: block;
-  margin: 0 auto 100px;
+  margin: 0 auto 70px;
   transition-duration: 0.4s;
 }
 
@@ -322,12 +314,8 @@ label.label input[type="file"] {
 
 @media (min-width: 700px) {
   .cal-container {
-    display: grid;
-    grid-template-areas:
-      "greet cal "
-      "mood cal "
-      "mood cal ";
-    gap: 20px;
+		display: flex;
+		flex-direction: row;
   }
 
   .entry__greet {
@@ -336,16 +324,8 @@ label.label input[type="file"] {
     font-weight: 500;
     word-wrap: normal;
     width: 250px;
-    margin-top: 90px;
-    grid-area: greet;
-  }
-
-  .calendar {
-    display: block;
-    height: 300px;
-    padding: 20px;
-    grid-area: cal;
-    width: auto;
+    margin-top: 50px;
+		margin-left: 30px;
   }
 
   .mood {
@@ -445,29 +425,17 @@ label.label input[type="file"] {
 }
 
 /*##################################
-########## SONG REC STYLE ##########
+########## CALENDAR STYLE ##########
 ###################################*/
 
-.song__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.song__title {
-  font-weight: 400;
-  text-align: center;
-  width: 300px;
-}
-
-.song__img {
-  width: 300px;
-  margin: 25px 0;
-}
-
-.song__name {
-  font-weight: 600;
-  font-size: 20px;
+.calendar {
+  background-color: rgba(255, 255, 255, 0.6);
+	width: 500px;
+	height: 500px;
+	margin: 25px auto;
+  padding: 30px 40px;
+  border-radius: 20px;
+	text-align: center;
 }
 
 /*##################################

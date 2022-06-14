@@ -9,9 +9,9 @@
 		@csrf
 		<div class="cal-container">
 			<p class="entry__greet">Nice to see you here, {{ Auth::user()->username }}!</p>
-			<div class="item-container calendar">
+			<!-- <div class="item-container calendar">
 				<p class="container__p">Month</p>
-			</div>
+			</div> -->
 
 			<div class="item-container mood">
 				<p class="container__p">Today's mood *</p>

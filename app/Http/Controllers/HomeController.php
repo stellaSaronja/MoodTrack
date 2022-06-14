@@ -11,6 +11,6 @@ class HomeController extends Controller
 	{
 		$entries = Entry::all();
 
-		return view('home');
+		return view('home', ['entries' => $entries]);
 	}
 }
