@@ -14,19 +14,19 @@
 	</h1>
 
 	<!-- Menu -->
-	<ul>
-		<li>
+	<ul class="nav__ul">
+		<li class="nav__li">
 			<a href="/" class="nav__a">Home</a>
 		</li>
-		<li>
+		<li class="nav__li">
 			<a href="/entry" class="nav__a">Entry</a>
 		</li>
-		<li>
+		<li class="nav__li">
 			<a href="/calendar" class="nav__a">Calendar</a>
 		</li>
 
 		@if(auth()->guest())
-		<li>
+		<li class="nav__li">
 			<a class="nav__a" href="{{ route('login') }}">
 				<svg data-name="Group 145" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
 					<defs>
@@ -56,7 +56,7 @@
 			</a>
 		</li>
 		@else
-		<li>
+		<li class="nav__li">
 			<a class="nav__logout" href="{{ route('logout') }}">
 				Log out
 			</a>

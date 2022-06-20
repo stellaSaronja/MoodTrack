@@ -36,7 +36,7 @@ nav {
   justify-content: space-between;
 }
 
-ul {
+.nav__ul {
   display: flex;
   justify-content: space-between;
   flex-basis: 400px;
@@ -48,7 +48,7 @@ ul {
   display: none;
 }
 
-li {
+.nav__li {
   list-style: none;
 }
 
@@ -77,7 +77,7 @@ main {
 }
 
 .mobile {
-  height: 85vh;
+  margin-bottom: 100px;
 }
 
 .container {
@@ -87,7 +87,7 @@ main {
 
 .item-container {
   background-color: rgba(255, 255, 255, 0.6);
-  margin: 25px auto;
+  margin: 30px auto;
   padding: 30px 40px;
   border-radius: 20px;
 }
@@ -138,38 +138,17 @@ main {
     width: 600px;
   }
 
-  .today {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 24px;
-    width: 300px;
-    margin-right: 30px;
-    grid-area: today;
-  }
- 
-  .today__date {
-    font-size: 28px;
-    font-weight: 500;
-  }
-
-  .today__emoji {
-    height: 60px;
-    width: 60px;
-  }
-
   .history {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .history__item {
     background-color: rgba(255, 255, 255, 0.6);
-    margin: 25px 5px;
+    margin: 25px 50px;
     padding: 25px 15px;
-    width: 100px;
-    height: 170px;
+    width: 200px;
+    height: 300px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -178,11 +157,11 @@ main {
   }
 
   .history__day {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .history__date {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 500;
   }
 }
@@ -304,7 +283,7 @@ label.label input[type="file"] {
   font-size: 18px;
   padding: 12px 80px;
   display: block;
-  margin: 0 auto 70px;
+  margin: 0 auto 100px;
   transition-duration: 0.4s;
 }
 
@@ -338,46 +317,15 @@ label.label input[type="file"] {
     width: 2.8rem;
     margin: 0 0.2rem;
   }
+
+  .save__btn {
+    margin-bottom: 60px;
+  }
 }
 
 /*##################################
 ############ FORM STYLE ############
 ###################################*/
-
-.form__img-container {
-  width: 70px;
-  height: 70px;
-  transform: translate(155%, 0%);
-  border-radius: 50%;
-  overflow: hidden;
-  border: 1px solid grey;
-}
-
-#photo {
-  width: 100%;
-  height: 100%;
-}
-
-#file {
-  display: none;
-}
-
-#uploadBtn {
-  height: 70px;
-  width: 70px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  text-align: center;
-  padding: 25px;
-}
-
-.form__img {
-  display: block;
-  margin: auto;
-}
 
 .input-container {
   display: flex;
@@ -402,13 +350,6 @@ label.label input[type="file"] {
   margin: auto;
 }
 
-.d-mode {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 500;
-}
-
 .redirect-btn {
   color: #fff;
 }
@@ -418,10 +359,6 @@ label.label input[type="file"] {
     width: 600px;
     margin: auto;
   }
-
-  .form__img-container {
-    transform: translate(330%, 0%);
-  }
 }
 
 /*##################################
@@ -429,13 +366,28 @@ label.label input[type="file"] {
 ###################################*/
 
 .calendar {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.calendar__item {
   background-color: rgba(255, 255, 255, 0.6);
-	width: 500px;
-	height: 500px;
-	margin: 25px auto;
-  padding: 30px 40px;
+  margin: 15px;
+  padding: 25px 15px;
+  width: 120px;
+  height: 200px;
   border-radius: 20px;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .calendar__item {
+    margin-bottom: 0px;
+  }
 }
 
 /*##################################
@@ -475,6 +427,17 @@ label.label input[type="file"] {
     font-size: 18px;
     font-weight: 500;
     margin-top: 80px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .foot__link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .foot__link:hover {
+    text-decoration: underline;
   }
 
   .foot__p {
@@ -493,4 +456,27 @@ label.label input[type="file"] {
   color: rgb(194, 19, 19);
   display: flex;
   flex-direction: row;
+}
+
+/*##################################
+########### LEGAL STYLE ###########
+###################################*/
+
+.terms {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.terms__ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.privacy__p {
+  margin-bottom: 34vh;
 }

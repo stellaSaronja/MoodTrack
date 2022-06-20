@@ -57,8 +57,8 @@
                 <path data-name="Path 121" d="M74.427 32.896s24.22 5.644 24.591 18.947c.4 14.513-28.622 19.753-28.622 19.753" fill="none" stroke="#333" stroke-miterlimit="10" stroke-width="5" />
             </g>
         </svg>
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
+        <a href="/terms" class="foot__link">Terms of Use</a>
+        <a href="/privacy" class="foot__link">Privacy Policy</a>
         <p>Imprint</p>
     </div>
 

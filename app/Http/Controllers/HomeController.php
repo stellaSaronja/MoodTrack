@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Entry;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-	public function index(Request $request)
+	public function index()
 	{
-		$entries = Entry::all();
+		$entries = Entry::orderBy('id', 'desc')->take(4)->get();
 
 		return view('home', ['entries' => $entries]);
 	}

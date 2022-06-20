@@ -1,21 +1,16 @@
 <?php
 
-function nice_number($n)
-{
+// function nice_date($date = null)
+// {
+//     if (!$date) {
 
-    return number_format($n, 0, ',', '.');
-}
+//         return null;
+//     }
 
-function nice_date($date = null)
-{
+//     return $date->diffForHumans() . ' ' . $date->format('d. M Y H:i');
+// }
 
-    if (!$date) {
-
-        return null;
-    }
-
-    // == https://carbon.nesbot.com/docs/
-    // == https://www.php.net/manual/en/datetime.format.php
-
-    return $date->diffForHumans() . ' ' . $date->format('d. M Y H:i');
-}
+// function show_entries($entry)
+// {
+//     $entry = Entry::orderBy('id', 'desc')->take(4);
+// }
