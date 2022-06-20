@@ -10,7 +10,7 @@
 		<div class="item-container mood">
 			<p class="mood__day">{{ $entry->created_at->format('D') }}</p>
 			<p class="mood__date">{{ $entry->created_at->format('d M') }}</p>
-			@switch($entry)
+			@switch($entry->mood)
 			@case('1')
 			<span class="history__emoji">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 24 24" class="mood__svg">
@@ -60,7 +60,7 @@
 			<div class="history__item">
 				<p class="history__day">{{ $entry->created_at->format('D') }}</p>
 				<p class="history__date">{{ $entry->created_at->format('d M') }}</p>
-				@switch($entry)
+				@switch($entry->mood)
 				@case('1')
 				<span class="history__emoji">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 24 24" class="mood__svg">
