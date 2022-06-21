@@ -16,7 +16,7 @@
 	<!-- Menu -->
 	<ul class="nav__ul">
 		<li class="nav__li">
-			<a href="/" class="nav__a">Home</a>
+			<a href="/home" class="nav__a">Home</a>
 		</li>
 		<li class="nav__li">
 			<a href="/entry" class="nav__a">Entry</a>

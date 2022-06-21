@@ -68,6 +68,77 @@ nav {
 }
 
 /*##################################
+########## LANDING STYLE ###########
+###################################*/
+
+.landing__h2 {
+  font-size: 24px;
+}
+
+.landing__container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  border-radius: 20px;
+  margin: 25px auto 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 600px;
+  text-align: center;
+}
+
+.landing__p {
+  text-align: start;
+}
+
+.landing__img {
+  width: 185px;
+  height: 330px;
+  margin: auto;
+}
+
+.landing__btn {
+  color: #fff;
+  background-color: #294d75;
+  padding: 12px 80px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+@media (min-width: 700px) {
+  .landing__h2 {
+    font-size: 28px;
+  }
+
+  .landing__container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  
+  .landing__p {
+    font-size: 20px;
+  }
+  
+  .landing__btn {
+    color: #fff;
+    background-color: #294d75;
+    padding: 12px 80px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+/*##################################
 ########### INDEX STYLE ############
 ###################################*/
 
@@ -327,6 +398,9 @@ label.label input[type="file"] {
 ############ FORM STYLE ############
 ###################################*/
 
+.main-height {
+  height: 80vh;
+}
 .input-container {
   display: flex;
   flex-direction: column;
@@ -397,7 +471,7 @@ label.label input[type="file"] {
 .foot__mobile {
   background-color: #fff;
   border-radius: 20px 20px 0 0;
-  padding: 10px;
+  padding: 7px;
   display: flex;
   justify-content: space-around;
   align-items: center;
