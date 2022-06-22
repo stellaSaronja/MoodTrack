@@ -24,8 +24,7 @@ class DatabaseSeeder extends Seeder
 
         foreach ($users as $user) {
 
-            \App\Models\Posting::factory(10)->create([
-
+            \App\Models\Entry::factory(10)->create([
                 'user_id' => $user->id,
             ]);
         }
