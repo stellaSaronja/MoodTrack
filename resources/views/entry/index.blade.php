@@ -57,7 +57,7 @@
 		</div>
 
 		<div class="item-container">
-			<p class="container__p">What challenges have you overcome today</p>
+			<p class="container__p">What challenges have you overcome today *</p>
 			<input type="text" name="challenge" id="challenge" class="container__text-input" placeholder="Type here" value="{{ old('challenge') }}">
 		</div>
 
