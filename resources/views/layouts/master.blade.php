@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>MoodTrack - @yield('title')</title>
+	<meta name="description" content="Improve your mental health with the help of an online diary that tracks your depression and anxiety">
 
 	<link rel="stylesheet" href="{{ 'css/style.css' }}">
-	<!-- <script src="{{ mix('js/app.js') }}"></script> -->
 
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">

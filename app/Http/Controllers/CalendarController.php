@@ -8,7 +8,7 @@ class CalendarController extends Controller
 {
 	public function index()
 	{
-		$entries = Entry::orderBy('id', 'desc')->get();
+		$entries = Entry::where('user_id', auth()->user()->id)->orderBy('id', 'desc')->get();
 
 		return view('calendar.index', ['entries' => $entries]);
 	}
