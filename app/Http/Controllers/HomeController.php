@@ -14,7 +14,7 @@ class HomeController extends Controller
 
 	public function home()
 	{
-		$entries = Entry::where('user_id', auth()->user()->id)->orderBy('id', 'desc')->get();
+		$entries = Entry::where('user_id', auth()->user()->id)->orderBy('id', 'desc')->take(4)->get();
 
 		return view('home', ['entries' => $entries]);
 	}
