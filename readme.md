@@ -66,3 +66,4 @@ Generate Laravel app key:
     php artisan key:generate
 
 Open localhost:80 in your browser
+or visit moodtrack.at 
