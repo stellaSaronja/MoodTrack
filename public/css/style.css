@@ -30,6 +30,7 @@ h1 {
 .h1__a {
   text-decoration: none;
   color: #294d75;
+  width: 170px;
 }
 
 nav {
@@ -151,6 +152,7 @@ nav {
 main {
   max-width: 350px;
   margin: auto;
+  min-height: 65vh;
 }
 
 .mobile {
@@ -201,6 +203,7 @@ main {
 @media (min-width: 700px) {
   main {
     max-width: 690px;
+    min-height: 79vh;
   }
 
   .mobile {
