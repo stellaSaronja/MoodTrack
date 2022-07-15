@@ -19,6 +19,7 @@ Route::middleware('auth')->group(function () {
 	Route::get('/home', 'HomeController@home')->name('home');
 	Route::get('/entry', 'EntryController@index')->name('entry.index');
 	Route::post('/entry', 'EntryController@postEntry')->name('entry.postEntry');
+	Route::get('/entry/{$id}', 'EntryController@viewEntry')->name('entry.viewEntry');
 	Route::get('/calendar', 'CalendarController@index')->name('calendar');
 });
 

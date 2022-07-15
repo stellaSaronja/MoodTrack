@@ -1,16 +1,18 @@
 <nav>
 	<h1>
-		<!-- Logo -->
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.636 30.554" width="30" style="margin-right: 10px">
-			<g data-name="Group 5">
-				<path data-name="Path 63" d="M28.053 13.941a6.99 6.99 0 1 1-13.979 0C14.074 10.081 21.026 0 21.026 0s7.027 9.445 7.027 13.941Z" fill="#294d75" />
-				<path data-name="Path 64" d="M28.053 14.114a7.01 7.01 0 0 1-6.907 6.817c-3.666.164-5.7-2.89-5.7-6.559s6.386-13.288 6.386-13.288 6.394 8.802 6.221 13.03Z" fill="#294d75" />
-				<path data-name="Path 65" d="M13.17 16.41s-4.639 1.316-4.44 4.111c.165 2.3 3.947 3.454 3.947 3.454a25.878 25.878 0 0 0 8.84 1.327c5.469-.013 8.1-1.492 8.1-1.492s3.182-1.316 3.289-3.125c.164-2.8-3.454-3.947-3.454-3.947" fill="none" stroke="#294d75" stroke-miterlimit="10" stroke-width="2" />
-				<path data-name="Path 66" d="M12.512 13.285S1 15.094 1 21.179c0 6.414 12.334 8.387 12.334 8.387" fill="none" stroke="#294d75" stroke-miterlimit="10" stroke-width="2" />
-				<path data-name="Path 67" d="M30.602 13.614s9.881 2.3 10.032 7.73c.165 5.921-11.677 8.059-11.677 8.059" fill="none" stroke="#294d75" stroke-miterlimit="10" stroke-width="2" />
-			</g>
-		</svg>
-		MoodTrack
+		<a href="/home" class="h1__a">
+			<!-- Logo -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.636 30.554" width="30" style="margin-right: 10px">
+				<g data-name="Group 5">
+					<path data-name="Path 63" d="M28.053 13.941a6.99 6.99 0 1 1-13.979 0C14.074 10.081 21.026 0 21.026 0s7.027 9.445 7.027 13.941Z" fill="#294d75" />
+					<path data-name="Path 64" d="M28.053 14.114a7.01 7.01 0 0 1-6.907 6.817c-3.666.164-5.7-2.89-5.7-6.559s6.386-13.288 6.386-13.288 6.394 8.802 6.221 13.03Z" fill="#294d75" />
+					<path data-name="Path 65" d="M13.17 16.41s-4.639 1.316-4.44 4.111c.165 2.3 3.947 3.454 3.947 3.454a25.878 25.878 0 0 0 8.84 1.327c5.469-.013 8.1-1.492 8.1-1.492s3.182-1.316 3.289-3.125c.164-2.8-3.454-3.947-3.454-3.947" fill="none" stroke="#294d75" stroke-miterlimit="10" stroke-width="2" />
+					<path data-name="Path 66" d="M12.512 13.285S1 15.094 1 21.179c0 6.414 12.334 8.387 12.334 8.387" fill="none" stroke="#294d75" stroke-miterlimit="10" stroke-width="2" />
+					<path data-name="Path 67" d="M30.602 13.614s9.881 2.3 10.032 7.73c.165 5.921-11.677 8.059-11.677 8.059" fill="none" stroke="#294d75" stroke-miterlimit="10" stroke-width="2" />
+				</g>
+			</svg>
+			MoodTrack
+		</a>
 	</h1>
 
 	<!-- Menu -->

@@ -12,7 +12,8 @@ class Entry extends Model
 		'user_id',
 		'mood',
 		'activity',
-		'challenges'
+		'challenges',
+		'photo'
 	];
 
 	public function user()

@@ -61,6 +61,11 @@
 			<input type="text" name="challenge" id="challenge" class="container__text-input" placeholder="Type here" value="{{ old('challenge') }}">
 		</div>
 
+		<div class="item-container">
+			<p class="container__p">Upload a picture of what made your day</p>
+			<input type="file" name="photo" id="photo" class="container__img-input">
+		</div>
+
 		<button type="submit" class="save__btn">Save</button>
 	</form>
 </main>

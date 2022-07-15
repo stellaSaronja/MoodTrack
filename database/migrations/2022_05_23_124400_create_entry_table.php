@@ -21,6 +21,7 @@ class CreateEntryTable extends Migration
             $table->integer('mood');
             $table->string('activity');
             $table->string('challenge');
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }

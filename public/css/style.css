@@ -23,9 +23,13 @@ body {
 
 h1 {
   font-weight: 500;
-  color: #294d75;
   display: flex;
   align-items: center;
+}
+
+.h1__a {
+  text-decoration: none;
+  color: #294d75;
 }
 
 nav {
@@ -122,11 +126,11 @@ nav {
     grid-template-columns: auto auto;
     align-items: center;
   }
-  
+
   .landing__p {
     font-size: 20px;
   }
-  
+
   .landing__btn {
     color: #fff;
     background-color: #294d75;
@@ -330,6 +334,11 @@ input[class="super-sad"]:focus + .mood__svg {
   border-radius: 8px;
 }
 
+.container__img-input {
+  display: flex;
+  margin: auto;
+}
+
 label.label input[type="file"] {
   display: none;
 }
@@ -364,8 +373,8 @@ label.label input[type="file"] {
 
 @media (min-width: 700px) {
   .cal-container {
-		display: flex;
-		flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .entry__greet {
@@ -375,7 +384,7 @@ label.label input[type="file"] {
     word-wrap: normal;
     width: 250px;
     margin-top: 50px;
-		margin-left: 30px;
+    margin-left: 30px;
   }
 
   .mood {
