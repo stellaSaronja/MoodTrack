@@ -57,7 +57,7 @@
 	<div class="desktop">
 		<div class="history">
 			@foreach ($entries as $entry)
-			<a href="/entry/{$id}">
+			<a href="{{ route('entry/{$id}') }}" class="entry__link">
 				<div class="history__item">
 					<p class="history__day">{{ $entry->created_at->format('D') }}</p>
 					<p class="history__date">{{ $entry->created_at->format('d M') }}</p>
