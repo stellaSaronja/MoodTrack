@@ -42,6 +42,6 @@ class EntryController extends Controller
 	public function viewEntry()
 	{
 		$entry = Entry::where('user_id', auth()->user()->id)->orderBy('id', 'desc')->take(1)->get();
-		return view('entry.view');
+		return view('entry.show');
 	}
 }
