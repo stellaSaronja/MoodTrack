@@ -26,7 +26,7 @@ class EntryController extends Controller
 		$entry->mood = $request->mood;
 		$entry->activity = $request->activity;
 		$entry->challenge = $request->challenge;
-		// $entry->photo = $request->photo;
+		$entry->photo = $request->photo;
 		if ($request->file('image')) {
 			$file = $request->file('image');
 			$filename = date('YmdHi') . $file->getClientOriginalName();
