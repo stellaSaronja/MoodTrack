@@ -100,7 +100,7 @@
 					</svg>
 				</span>
 				@endswitch
-				<!-- <img src="{{ url('public/uploads/'.$entry->photo) }}" alt="Your uploaded photo" style="width: 150px"> -->
+				<img src="{{ url('public/uploads/'.$entry->photo) }}" alt="Your uploaded photo" style="width: 150px">
 			</div>
 			@endforeach
 		</div>
