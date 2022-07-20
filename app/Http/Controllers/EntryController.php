@@ -30,8 +30,10 @@ class EntryController extends Controller
 		if ($request->file('image')) {
 			$file = $request->file('image');
 			$filename = date('YmdHi') . $file->getClientOriginalName();
-			$file->move(public_path('public/uploads'), $filename);
+			$file->move(public_path('uploads'), $filename);
 			$entry['image'] = $filename;
+		} else {
+			// $file = 
 		}
 
 		if ($entry->save()) {
@@ -42,6 +44,7 @@ class EntryController extends Controller
 	public function viewEntry()
 	{
 		$entry = Entry::where('user_id', auth()->user()->id)->orderBy('id', 'desc')->take(1)->get();
-		return view('entry.show');
+
+		return view('entry.show', ['entry' => $entry]);
 	}
 }

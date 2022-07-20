@@ -146,13 +146,18 @@ nav {
 }
 
 /*##################################
-########### INDEX STYLE ############
+########### HOME STYLE ############
 ###################################*/
 
 main {
   max-width: 350px;
   margin: auto;
   min-height: 65vh;
+}
+
+.to-entry {
+  text-decoration: none;
+  color: #000;
 }
 
 .mobile {

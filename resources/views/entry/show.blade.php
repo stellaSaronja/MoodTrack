@@ -6,6 +6,7 @@
 
 <main>
     <div class="history__item">
+        <img src="{{ url('public/uploads/'.$entry->photo) }}" alt="Your uploaded photo" style="height: 150px">
         <p class="history__day">{{ $entry->created_at->format('D') }}</p>
         <p class="history__date">{{ $entry->created_at->format('d M') }}</p>
         @switch($entry->mood)
@@ -48,7 +49,6 @@
             </svg>
         </span>
         @endswitch
-        <img src="{{ url('public/uploads/'.$entry->photo) }}" alt="Your uploaded photo" style="width: 150px">
     </div>
 </main>
 
