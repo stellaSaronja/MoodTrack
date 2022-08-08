@@ -5,7 +5,8 @@
 @section('container')
 
 <main>
-	<form method="post" action="{{ route('entry.postEntry') }}">
+	<form method="post" action="{{ route('entry.postEntry') }}" enctype="multipart/form-data">
+
 		@csrf
 		<div class="cal-container">
 			<p class="entry__greet">Nice to see you here, {{ Auth::user()->username }}!</p>

@@ -18,7 +18,7 @@ class EntryController extends Controller
 			'mood' => 'required',
 			'activity' => 'required|max:500',
 			'challenge' => 'max:500',
-			'photo' => 'required'
+			'photo' => ''
 		]);
 
 		$entry = new Entry;
@@ -26,14 +26,11 @@ class EntryController extends Controller
 		$entry->mood = $request->mood;
 		$entry->activity = $request->activity;
 		$entry->challenge = $request->challenge;
-		$entry->photo = $request->photo;
-		if ($request->file('image')) {
-			$file = $request->file('image');
+		if ($request->file('photo')) {
+			$file = $request->file('photo');
 			$filename = date('YmdHi') . $file->getClientOriginalName();
-			$file->move(public_path('uploads'), $filename);
-			$entry['image'] = $filename;
-		} else {
-			// $file = 
+			$file->move(storage_path('app/public/images'), $filename);
+			$entry['photo'] = $filename;
 		}
 
 		if ($entry->save()) {

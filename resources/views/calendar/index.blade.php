@@ -52,7 +52,11 @@
 					</svg>
 				</span>
 				@endswitch
-				<img src="{{ url('public/uploads/'.$entry->photo) }}" alt="Your uploaded photo" style="width: 50px">
+				@if($entry->photo)
+				<img src="{{ asset('storage/images/'.$entry->photo) }}" alt="Your uploaded photo" style="width: 50px" />
+				@else
+				<img src="{{ asset('img/default.png') }}" alt="Your uploaded photo" style="width: 70px" />
+				@endif
 			</div>
 		</a>
 		@endforeach
