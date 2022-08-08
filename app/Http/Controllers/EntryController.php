@@ -18,7 +18,7 @@ class EntryController extends Controller
 			'mood' => 'required',
 			'activity' => 'required|max:500',
 			'challenge' => 'max:500',
-			'photo' => ''
+			'photo' => 'max:500000'
 		]);
 
 		$entry = new Entry;
